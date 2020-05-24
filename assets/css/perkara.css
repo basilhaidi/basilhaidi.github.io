@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+*{
+   box-sizing: border-box;
+}
+header {
+    display: inline;
+ }
+
+ nav {
+    background-color: #545659;
+    padding: 2px;
+    position: sticky;
+    z-index:10;
+    top: 0;
+    box-shadow: 0 1px 10px rgba(13, 19, 38, 0.5);
+ }
+
+ nav ul{
+    padding-inline-start: 0px;
+ }
+ nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 14px;
+ }
+ #logo-navbar{
+   float: right;
+   margin-top: -16px;
+   margin-bottom: -32px;
+   margin-right: 16px;
+   max-width: 32px;
+ }
+
+nav ul li:hover{
+    background:#666;
+} 
+
+nav ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+
+
+#beranda{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#background-header{
+   width: 100%;
+   max-height: 670px;
+   object-fit: cover;
+}
+
+.jumbotron {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 30%;
+   transform: translate(-50%, -50%);
+   font-size: 20px;
+   letter-spacing: 5px;
+   z-index: 9;
+ }
+
+#tentang-perkara{
+   text-align: center;
+   padding-left: 56px;
+   padding-right: 56px;
+   margin-top:64px;
+   margin-bottom: 64px;
+}
+#tentang-perkara h2{
+   font-size: 40px;
+}
+#logo {
+   width: auto;
+   height: auto;
+   object-position: center;
+}
+#tentang-perkara p{
+   font-size: 24px;
+   letter-spacing: 1px;
+   word-spacing: 4px;
+   padding: 32px;
+}
+
+#struktur-organisasi{
+   background-color: #545659;
+   color: white;
+   text-align: center;
+   padding: 16px;
+   font-size: 40px;
+}
+
+.bagan{
+   max-width: 450px;
+}
+
+.slider{
+   max-width:300px;
+   margin: auto;
+   overflow: hidden;
+}
+.slider-items{
+   display: flex;
+   object-position: center;
+   width: 100%;
+   height: auto;
+}
+
+button{
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 2px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #545659;
+  background-color: #F1E958;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #999;
+}
+button:hover {
+   background-color: #d4cb11;
+}
+
+button:active {
+  background-color: #d4cb11;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#kegiatan{
+   background-color: #ffffff;
+   color: black;
+   text-align: center;
+   font-size: 40px;
+}
+
+.slider-kegiatan{
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+}
+.slider-items2{
+   display: flex;
+   width: 100%;
+   height: auto;
+}
+
+.profile header{
+   text-align: center;
+}
+.profile img {
+   width: 200px;
+   object-position: center;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   margin:10px;
+}
+
+main {
+   overflow: hidden;
+}
+#content {
+   float: left;
+   width: 72%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   margin: 10px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #545659;
+   text-align: center;
+   font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
